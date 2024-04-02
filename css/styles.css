@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --fonte-principal: "Poppins", sans-serif;
+    --cor-fundo: linear-gradient(to bottom, rgba(0, 27, 51, 1) 0%, 11.801242083311081%, rgba(0, 43, 93, 1) 23.602484166622162%, 46.27329036593437%, rgba(0, 99, 160, 1) 68.94409656524658%, 78.57142686843872%, rgba(1, 109, 174, 1) 88.19875717163086%, 91.61490797996521%, rgba(158, 130, 164, 1) 95.03105878829956%, 96.27329409122467%, rgba(255, 160, 126, 1) 97.51552939414978%, 98.75776469707489%, rgba(223, 194, 167, 1) 100%);
+    --cor-fonte-titulo: ;
+    --cor-fonte-texto: ;
+    --cor-fundo-card: ;
+    --sombra: ;
+
+
+}
+
+
+#body {
+    text-align: center;
+}
+
+#body.fixado {
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+main {
+    font-family: var(--fonte-principal);
+}
+
+
+.container {
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+/* ANIMAÇÃO FADE IN LEFT */
+@-webkit-keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-in-left {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-left {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* SCROLLBAR */
+
+
+
+
+body {
+    --sb-track-color: #292c2d;
+    --sb-thumb-color: #e6e6e6;
+    --sb-size: 6px;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 4px;
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}

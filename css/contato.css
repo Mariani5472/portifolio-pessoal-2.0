@@ -1,0 +1,117 @@
+@import url(styles.css);
+
+#contato {
+    background: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.contato__card {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contato__titulo {
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin: 1rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.contato__container {
+    display: grid;
+    place-items: center;
+}
+
+.contato__form {
+    width: 100%;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input,
+.label,
+.text_area,
+.contato__btn {
+    display: block;
+}
+
+.contato__btn {
+    color: white;
+}
+
+.input,
+.text_area,
+.contato__btn {
+    width: 100%;
+    font: inherit;
+    font-weight: 700;
+}
+
+.input,
+.text_area {
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: solid 1px;
+    transition: border-color 0.3s,
+        box-shadow 0.3s;
+}
+
+.input:hover,
+.input:focus,
+.text_area:hover,
+.text_area:focus {
+    outline: none;
+    border-color: white;
+    box-shadow: 0 0 0 0.1rem black;
+    ;
+}
+
+.label {
+    margin-bottom: 0.5rem;
+}
+
+.text_area {
+    min-height: 12.5rem;
+    resize: vertical;
+}
+
+.contato__btn {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: black;
+    border: 1px solid white;
+
+}
+
+.contato__btn:hover,
+.contato__btn:focus {
+    outline: none;
+    background-color: white;
+    color: black;
+}
+
+.contato__btn:disabled {
+    cursor: not-allowed;
+    background: red;
+}

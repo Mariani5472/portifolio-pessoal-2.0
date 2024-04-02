@@ -1,0 +1,77 @@
+@import url(styles.css);
+
+#sobre {
+    height: min-content;
+    overflow-x: hidden;
+    background-image: linear-gradient(to top, rgba(255, 255, 255) 85%, rgba(255, 255, 255, 0) 100%), url(/img/background-alt2-rotate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.sobre__container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 3rem auto;
+    max-width: 500px;
+}
+
+.sobre__img {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 2rem;
+}
+
+.sobre__titulo {
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin: 1rem;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.sobre__texto {
+    color: black;
+    margin: 0 .5rem;
+    line-height: 1.3rem;
+}
+
+.sobre__container a {
+    border: none;
+    margin-top: 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.2s;
+    padding: 1rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.sobre__container a:hover {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .sobre__texto {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .sobre__container {
+        max-width: 900px;
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .sobre__container {
+        max-width: 1050px;
+    }
+}

@@ -1,0 +1,15 @@
+#footer {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    background: #020204;
+    color: white;
+    font-weight: 200;
+    text-align: center;
+}
+
+.footer_texto {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+}
